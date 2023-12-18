@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="100.591">
+<testcase classname="User Registration on Amazon" name="Validate Registration page" time="16.105">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_customer_name&quot;}&#10;  (Session info: chrome=120.0.6099.71)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.10.0', revision: 'c14d967899'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d5a03dfc4f41eb2d82d9f5eda9ddce90, findElement {using=css selector, value=#ap_customer_name}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\91901\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55878}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55878/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d5a03dfc4f41eb2d82d9f5eda9ddce90" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user is on the Amazon registration page...........................passed
+Then registration page title is displayed as "Amazon Registration"..........passed
+And your name field is displayed............................................failed
+And Mobile number field is displayed........................................skipped
+And Email field is displayed................................................skipped
+And Password field is displayed.............................................skipped
+And Verify Mobile Number button is displayed................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ap_customer_name"}
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5a03dfc4f41eb2d82d9f5eda9ddce90, findElement {using=css selector, value=#ap_customer_name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\91901\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55878}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55878/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5a03dfc4f41eb2d82d9f5eda9ddce90
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)
+	at org.pages.AmazonRegPage.nameFieldIsDisplayed(AmazonRegPage.java:74)
+	at org.stepDefinations.AmazonRegistration.your_name_field_is_displayed(AmazonRegistration.java:38)
+	at ✽.your name field is displayed(file:///H:/Acceleration/Workspace/Amazon_TRUGLOBAL/./src/test/resources/org/features/Amazon_Registration.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="User Registration on Amazon" name="Register a new user on Amazon" time="34.522">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#auth-verify-button&quot;}&#10;  (Session info: chrome=120.0.6099.71)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.10.0', revision: 'c14d967899'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c66641e7f8cc36bb83783f62dd4ac5ad, findElement {using=css selector, value=#auth-verify-button}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\91901\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56039}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56039/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c66641e7f8cc36bb83783f62dd4ac5ad" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user is on the Amazon registration page...........................passed
+When user enters First and Last name as "Ganesh Patil"......................passed
+And user enters mobile number...............................................passed
+And user enters Email.......................................................passed
+And user enters password....................................................passed
+And click on Verify Mobile Number button....................................passed
+And wait until puzzle solve.................................................passed
+And user enters OTP.........................................................passed
+And click on Create your Amazon account option..............................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#auth-verify-button"}
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c66641e7f8cc36bb83783f62dd4ac5ad, findElement {using=css selector, value=#auth-verify-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\91901\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56039}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56039/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c66641e7f8cc36bb83783f62dd4ac5ad
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at org.pages.AmazonRegPage.clickOnCreateAmzAccOpt(AmazonRegPage.java:135)
+	at org.stepDefinations.AmazonRegistration.click_on_Create_your_Amazon_account_option(AmazonRegistration.java:112)
+	at ✽.click on Create your Amazon account option(file:///H:/Acceleration/Workspace/Amazon_TRUGLOBAL/./src/test/resources/org/features/Amazon_Registration.feature:23)
+]]></failure>
+</testcase>
+<testcase classname="Amazon Product Search and Purchase" name="Search, Select, and Add iPhone to Cart on Amazon" time="26.427">
+<failure message="&quot;Product is not added to Cart&quot; expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given the user is on the Amazon home page...................................passed
+When the user searches for "iphone".........................................passed
+Then a list of search results is displayed..................................passed
+When the user selects product from the list.................................passed
+Then the user is on the product details page................................passed
+When the user retrieves the price of the iPhone and stores it in a variable.passed
+And the user adds the iPhone to the cart....................................passed
+Then the iPhone should be added to the cart successfully....................failed
+
+StackTrace:
+java.lang.AssertionError: "Product is not added to Cart" expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.stepDefinations.ProductPurchase.the_i_phone_should_be_added_to_the_cart_successfully(ProductPurchase.java:69)
+	at ✽.the iPhone should be added to the cart successfully(file:///H:/Acceleration/Workspace/Amazon_TRUGLOBAL/./src/test/resources/org/features/Product_Purchase.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="Search and Filter Phones on Amazon" name="Search for Phones, Apply Filters, and Validate Results" time="23.082">
+<system-out><![CDATA[Given the user is on the Amazon homepage....................................passed
+When the user searches for phone as "Phone".................................passed
+Then product list of search results is displayed............................passed
+When the user applies filters for brand, operating system, etc..............passed
+Then the filtered product list is displayed.................................passed
+]]></system-out>
+</testcase>
+</testsuite>
